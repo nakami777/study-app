@@ -1,17 +1,19 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
-import { Appbar } from "react-native-paper";
-import { Platform } from "react-native";
+import AppTopBar from "../components/AppTopBar";
 
 import { Text, View } from "../components/Themed";
 
 export default function TabOneScreen() {
   return (
-    <Appbar.Header>
-      <Appbar.Content title="資格勉強スタディ" />
-      <Appbar.Action icon="pencil" onPress={() => {}} />
-      <Appbar.Action icon="plus" onPress={() => {}} />
-    </Appbar.Header>
+    <View style={styles.container}>
+      <Text style={styles.title}>Tab One</Text>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+    </View>
   );
 }
 
